@@ -1,11 +1,11 @@
 {
   "name": "auth-flow",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "license": "MIT",
   "scripts": {
-    "build": "npx tsc",
-    "start:prod": "NODE_ENV=prod node dist/index.js",
+    "build": "yarn tsc",
+    "start:prod": "NODE_ENV=prod node dist/index.ts",
     "start:dev": "NODE_ENV=dev nodemon src/index.ts"
   },
   "dependencies": {
@@ -24,7 +24,7 @@
     "morgan": "^1.10.0",
     "reflect-metadata": "^0.2.1",
     "routing-controllers": "^0.10.4",
-    "typescript": "^5.4.5"
+    "win-node-env": "^0.6.1"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.5",
@@ -32,6 +32,7 @@
     "@types/morgan": "^1.9.9",
     "@types/node": "^20.11.30",
     "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
